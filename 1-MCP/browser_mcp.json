@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@playwright/mcp@latest"]
+    },
+    "airbnb": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@openbnb/mcp-server-airbnb"]
+    },
+    "ddg-search": {
+      "transport": "stdio",
+      "command": "uvx.exe",
+      "args": ["duckduckgo-mcp-server"],
+      "env": {
+        "DDG_SAFE_SEARCH": "STRICT",
+        "DDG_REGION": "cn-zh"
+      }
+    }
+  }
+}
